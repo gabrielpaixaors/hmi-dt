@@ -1,0 +1,25 @@
+<parts>
+    <part name="mimicdata">
+      <alsa_mimicdata cache="true" enablerecall="false" framemodel="overviewstation" hasairspacerestrictions="false" height="700" title="" type="{assembly:null}" version="version 1" width="10000" xmlns="http://schemas.alstom.com/alsgui/2012/mimic" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" />
+    </part>
+    <part name="mimic">
+      <alsa_mimic branches="server = server/cluster1:[2:http://www.alstom.com/transport/iconis/s2k/data]&lt;organizes&gt;2:s2kserver" filename=" (mimic)" height="auto" istabstop="false" mimicbackground="{av:staticresource black}" mimicframemodel="overviewstation" mimicheight="700" mimicwidth="10000" name="thismimic" width="auto" xmlns="http://schemas.alstom.com/alsgui/2012/mimic" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:aisso="clr-namespace:alstom.iconis.signaling.signalingobjects;assembly=alstom.iconis.signaling.signalingobjects" xmlns:aicg="clr-namespace:alstom.iconis.controls.generic;assembly=alstom.iconis.controls.generic" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <av:canvas av:keyboardnavigation.istabstop="false" background="{av:binding path=mimicbackground, relativesource={av:relativesource mode=findancestor, ancestortype=alsa_mimic, ancestorlevel=1}}" cliptobounds="false" cursor="arrow" height="700" width="10000">
+          <av:canvas.resources>
+            <aicg:iconisnulltovisibilityconverter x:key="nulltovisibilityconverter" />
+          </av:canvas.resources>
+  
+        </av:canvas>
+      </alsa_mimic>
+      
+    </part>
+    <part name="variables">
+      <alsf_variablenamelist capacity="4" xmlns="http://schemas.alstom.com/alsgui/2012/mimic" xmlns:s="clr-namespace:system;assembly=mscorlib">
+        <s:string>local:tlvselectedareaxml</s:string>
+        <s:string>local:tlvselectionmode</s:string>
+        <s:string>local:selectedsymbols</s:string>
+        <s:string>local:xmlparameters</s:string>
+      </alsf_variablenamelist>
+    </part>
+    <part name="language" />
+  </parts>
